@@ -10,17 +10,16 @@ Initially, I separated the data into labels and features, then performed a `trai
 
 In the “loan_status” column, '0' means that the loan is healthy, and 1 means that the loan has a high risk of defaulting. 
 
-* Accuracy Score:
-   * Achieved an accuracy of 99%.
-   * Indicates that the model correctly predicts 99% of all samples.
+* Accuracy Score
+   * Achieved an accuracy of 99%: Indicates that the model correctly predicts 99% of all samples.
 * Precision Score:
-   * Precision for healthy loan: 1.00 (100%), meaning all predicted healthy loans are indeed healthy.
-   * Precision for high-risk loan : 0.84 (84%), indicating that 84% of the predicted high-risk loans are actually high-risk.
+   * Precision for healthy loan: 1.00 (100%): all predicted healthy loans are indeed healthy.
+   * Precision for high-risk loan : 0.84 (84%): 84% of the predicted high-risk loans are actually high-risk.
 * Recall Score:
-   * Recall for healthy loan: 0.99 (99%), showing that 99% of actual healthy loans were correctly identified.
-   * Recall for high-risk loan: 0.94 (94%), suggesting that 94% of actual high-risk loans were correctly predicted.
+   * Recall for healthy loan: 0.99 (99%): 99% of actual healthy loans were correctly identified.
+   * Recall for high-risk loan: 0.94 (94%): 94% of actual high-risk loans were correctly predicted.
 
 
 ## Summary
 
-According to the classification report, we could see that the model performs well with 99% overall accuracy. That means most predictions are correct. But the precision for high risk loan is relatively low. That probably caused by small number of samples which is 619. In conclusion, the model performs excellently for healthy loans, but there is room for improvement in predicting high-risk loans.
+According to the classification report, we could see that the model performs well with 99% overall accuracy. That means most predictions are correct. But the precision for high risk loan is notably lower at 0.84.This means that when the model predicts a loan as high-risk, there is still a 16% chance that it is incorrect. That probably caused by small number of samples which is 619. In conclusion, the model performs excellently for healthy loans, but there is room for improvement in predicting high-risk loans. Future efforts could focus on exploring different modeling approaches tailored to handle class imbalances. It can provide more reliable insights for decision-makers in the lending industry.
